@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Elements Regression Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 8px;
+      margin-top: 40px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 12px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      margin: 0;
+      padding: 8px 16px;
+      color: #666;
+    }
+    details {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 12px;
+    }
+    .color-box {
+      width: 100px;
+      height: 40px;
+      display: inline-block;
+      margin: 4px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Elements Regression Test</h1>
+  <p>This page tests rendering of the most commonly used HTML elements.</p>
+
+  <hr>
+
+  <!-- ==================== TEXT FORMATTING ==================== -->
+  <section>
+    <h2>Text Formatting</h2>
+    <p>Regular paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p><b>Bold text</b> and <strong>strong text</strong></p>
+    <p><i>Italic text</i> and <em>emphasized text</em></p>
+    <p><u>Underlined text</u></p>
+    <p><s>Strikethrough text</s> and <del>deleted text</del></p>
+    <p><mark>Highlighted text</mark></p>
+    <p><small>Small text</small> and <big>big text</big></p>
+    <p>Subscript: H<sub>2</sub>O and Superscript: E=mc<sup>2</sup></p>
+    <p><code>Inline code snippet</code></p>
+    <p><abbr title="HyperText Markup Language">HTML</abbr> abbreviation</p>
+    <p><cite>Citation text</cite></p>
+    <p><q>Inline quotation text</q></p>
+    <p><kbd>Ctrl</kbd> + <kbd>C</kbd> keyboard input</p>
+    <p><var>x</var> = <var>y</var> + 2 variable text</p>
+    <p><samp>Sample output text</samp></p>
+    <p>Text with <span style="color: red;">red span</span> inline.</p>
+  </section>
+
+  <hr>
+
+  <!-- ==================== HEADINGS ==================== -->
+  <section>
+    <h2>Headings</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </section>
+
+  <hr>
+
+  <!-- ==================== LISTS ==================== -->
+  <section>
+    <h2>Lists</h2>
+
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Item one</li>
+      <li>Item two
+        <ul>
+          <li>Nested item A</li>
+          <li>Nested item B</li>
+        </ul>
+      </li>
+      <li>Item three</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+      <li>First item</li>
+      <li>Second item
+        <ol>
+          <li>Nested item A</li>
+          <li>Nested item B</li>
+        </ol>
+      </li>
+      <li>Third item</li>
+    </ol>
+
+    <h3>Description List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+      <dt>JS</dt>
+      <dd>JavaScript</dd>
+    </dl>
+  </section>
+
+  <hr>
+
+  <!-- ==================== LINKS ==================== -->
+  <section>
+    <h2>Links</h2>
+    <p><a href="https://example.com">External link</a></p>
+    <p><a href="https://example.com" target="_blank">Link opening in new tab</a></p>
+    <p><a href="#headings">Anchor link (jump to Headings section)</a></p>
+    <p><a href="mailto:test@example.com">Email link</a></p>
+    <p><a href="tel:+1234567890">Phone link</a></p>
+  </section>
+
+  <hr>
+
+  <!-- ==================== IMAGES ==================== -->
+  <section>
+    <h2>Images</h2>
+    <p>Image with alt text:</p>
+    <img src="https://via.placeholder.com/300x150" alt="Placeholder image" width="300" height="150">
+
+    <p>Image inside a figure with caption:</p>
+    <figure>
+      <img src="https://via.placeholder.com/300x150" alt="Figure image" width="300" height="150">
+      <figcaption>Figure caption text goes here</figcaption>
+    </figure>
+  </section>
+
+  <hr>
+
+  <!-- ==================== TABLE ==================== -->
+  <section>
+    <h2>Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>30</td>
+          <td>alice@example.com</td>
+          <td>Admin</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>25</td>
+          <td>bob@example.com</td>
+          <td>Editor</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>35</td>
+          <td>charlie@example.com</td>
+          <td>Viewer</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Table footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- ==================== FORMS ==================== -->
+  <section>
+    <h2>Form Elements</h2>
+    <form>
+      <fieldset>
+        <legend>Basic Inputs</legend>
+
+        <p>
+          <label for="text-input">Text input:</label><br>
+          <input type="text" id="text-input" name="text" placeholder="Enter text here">
+        </p>
+
+        <p>
+          <label for="email-input">Email input:</label><br>
+          <input type="email" id="email-input" name="email" placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label for="password-input">Password input:</label><br>
+          <input type="password" id="password-input" name="password" placeholder="Password">
+        </p>
+
+        <p>
+          <label for="number-input">Number input:</label><br>
+          <input type="number" id="number-input" name="number" min="0" max="100" value="42">
+        </p>
+
+        <p>
+          <label for="date-input">Date input:</label><br>
+          <input type="date" id="date-input" name="date">
+        </p>
+
+        <p>
+          <label for="range-input">Range input:</label><br>
+          <input type="range" id="range-input" name="range" min="0" max="100" value="50">
+        </p>
+
+        <p>
+          <label for="color-input">Color input:</label><br>
+          <input type="color" id="color-input" name="color" value="#ff0000">
+        </p>
+
+        <p>
+          <label for="checkbox-input">Checkbox:</label>
+          <input type="checkbox" id="checkbox-input" name="checkbox" checked>
+        </p>
+
+        <p>Radio buttons:<br>
+          <input type="radio" id="radio1" name="radio" value="option1" checked>
+          <label for="radio1">Option 1</label><br>
+          <input type="radio" id="radio2" name="radio" value="option2">
+          <label for="radio2">Option 2</label>
+        </p>
+
+        <p>
+          <label for="select-input">Select dropdown:</label><br>
+          <select id="select-input" name="select">
+            <option value="">-- Choose an option --</option>
+            <option value="a">Option A</option>
+            <option value="b">Option B</option>
+            <option value="c">Option C</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="textarea-input">Textarea:</label><br>
+          <textarea id="textarea-input" name="textarea" rows="4" cols="40" placeholder="Enter longer text here..."></textarea>
+        </p>
+
+        <p>
+          <label for="file-input">File input:</label><br>
+          <input type="file" id="file-input" name="file">
+        </p>
+
+        <p>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+          <button type="button">Button</button>
+        </p>
+      </fieldset>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- ==================== MEDIA ==================== -->
+  <section>
+    <h2>Media</h2>
+
+    <h3>Video</h3>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <h3>iframe (YouTube)</h3>
+    <iframe
+      width="560" height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <hr>
+
+  <!-- ==================== BLOCKQUOTE & PRE ==================== -->
+  <section>
+    <h2>Blockquote &amp; Preformatted Text</h2>
+
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </blockquote>
+
+    <pre>
+function hello(name) {
+    return "Hello, " + name + "!";
+}
+console.log(hello("World"));
+    </pre>
+  </section>
+
+  <hr>
+
+  <!-- ==================== DETAILS & SUMMARY ==================== -->
+  <section>
+    <h2>Details &amp; Summary</h2>
+    <details>
+      <summary>Click to expand</summary>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This content is hidden until the summary is clicked.</p>
+    </details>
+
+    <details open>
+      <summary>Already expanded</summary>
+      <p>This details element is open by default using the <code>open</code> attribute.</p>
+    </details>
+  </section>
+
+  <hr>
+
+  <!-- ==================== SEMANTIC ELEMENTS ==================== -->
+  <section>
+    <h2>Semantic Elements</h2>
+
+    <article>
+      <h3>Article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+    </article>
+
+    <aside>
+      <h3>Aside</h3>
+      <p>This is an aside element, typically used for sidebars or supplementary content.</p>
+    </aside>
+
+    <address>
+      <strong>Contact:</strong><br>
+      123 Lorem Street<br>
+      Ipsum City, 00-000<br>
+      <a href="mailto:contact@example.com">contact@example.com</a>
+    </address>
+
+    <time datetime="2026-01-01">January 1, 2026</time>
+  </section>
+
+  <hr>
+
+  <!-- ==================== MISC ==================== -->
+  <section>
+    <h2>Miscellaneous</h2>
+
+    <h3>Horizontal Rule</h3>
+    <hr>
+
+    <h3>Line Break</h3>
+    <p>First line.<br>Second line after a break.</p>
+
+    <h3>Progress Bar</h3>
+    <progress value="70" max="100">70%</progress>
+
+    <h3>Meter</h3>
+    <meter value="0.6">60%</meter>
+
+    <h3>Canvas (blank)</h3>
+    <canvas width="200" height="80" style="border:1px solid #ccc;"></canvas>
+
+    <h3>HTML Entities</h3>
+    <p>&amp; &lt; &gt; &quot; &apos; &copy; &reg; &trade; &nbsp; &euro; &pound;</p>
+  </section>
+
+  <hr>
+
+  <!-- ==================== External Share as an iframe ==================== -->
+  <section>
+    <h2>External Share (PROD)</h2>
+    <iframe
+		width="90%" height=800px
+		src="https://confluence.external-share.com/content/4e187dd6-6954-4f1e-996e-518d075815c4"
+		title="External Share"
+		frameborder="0">
+	</iframe>
+  </section>
+
+
+</body>
+</html>
