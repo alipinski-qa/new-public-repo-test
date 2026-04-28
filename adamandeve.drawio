@@ -35,6 +35,9 @@
         <mxCell id="4K99eDt_fn9TxlZNm4-Y-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="apple" vertex="1">
           <mxGeometry height="30" width="60" x="405" y="225" as="geometry" />
         </mxCell>
+        <mxCell id="Mc9AwmgwtxchF9XhSYgf-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="edit" vertex="1">
+          <mxGeometry height="30" width="60" x="310" y="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
